@@ -1,0 +1,76 @@
+/* Estilos generales */
+:root {
+  --primary-color: #fff2d0; /* Para texto, margenes, etc.*/
+  --secondary-color: black; /* Para el fondo*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  position: absolute;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 45px;
+  border-bottom: 3px  dotted var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+h1{
+margin-left: 20px;
+}
+
+main{
+  margin-top: 65px;
+}
+
+.content {
+    padding: 10px 20px;
+    border-top: 3px  dotted var(--secondary-color);
+    border-bottom: 3px  dotted var(--secondary-color);
+}
+
+.sidebar {
+border: 3px dotted var(--secondary-color);
+width: fit-content;
+margin: 20px 0px;
+position: static;
+margin-left: 78%;
+padding: 10px 20px;
+}
+
+.features{
+  border-top: 3px  dotted var(--secondary-color);
+  border-bottom: 3px  dotted var(--secondary-color);
+  text-align: center;
+}
+
+.features > h2{
+  margin-top: 20px;
+}
+.feature:last-child{
+  margin-bottom: 20px;
+}
+  
+footer{
+  border-top: 3px  dotted var(--secondary-color);
+  border-bottom: 3px  dotted var(--secondary-color);
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 20px;
+}
+
